@@ -31,43 +31,10 @@ public class FavoriteRestaurantList extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        //Initially setting the total price to 0.0 when activity opens first time
-        //totalPrice.setText("0.0");
-        restaurantCheck=new GestureDetectorCompat(this, new FavoriteRestaurantList.RecyclerViewOnGestureListener());
-        recyclerView.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-                return restaurantCheck.onTouchEvent(e);
-            }
-        });
+
     }
 
-    private class RecyclerViewOnGestureListener extends GestureDetector.SimpleOnGestureListener {
 
-        @Override
-        public boolean onSingleTapConfirmed(MotionEvent e) {
-            View view = recyclerView.findChildViewUnder(e.getX(), e.getY());
-            if (view != null) {
-                RecyclerView.ViewHolder viewHolder = recyclerView.getChildViewHolder(view);
-                if (viewHolder instanceof RestaurantAdapter.RestaurantViewHolder) {
-                    int position = viewHolder.getAdapterPosition();
-                    RestaurantModel myModel =RestaurantModel.getSingleton();
-
-
-                    for(int i=0;i< restaurantAdapter.restaurantModel.restaurantList.size();i++){
-                        //restaurantAdapter.restaurantModel.addItem(i);
-                    }
-                    ///finalSum=restaurantAdapter.groceryModel.getTotalPrice();
-
-
-                    //totalPrice.setText(finalSum+"");
-                    restaurantAdapter.notifyItemRemoved(position);
-                    return true;
-                }
-            }
-            return false;
-        }
-    }
 
     public void goBackToHome(View v){
         //onBackPressed();
