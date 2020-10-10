@@ -33,7 +33,9 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         Button bb=shoppingViewHolder.subview.findViewById(R.id.button8);
         bb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                Intent iui=new Intent(shoppingViewHolder.context, LoginPage.class);
+                //iui.putExtra("restName",ss);
+                shoppingViewHolder.context.startActivity(iui);
             }
         });
         //TextView itemprice = shoppingViewHolder.subview.findViewById(R.id.prc2);
