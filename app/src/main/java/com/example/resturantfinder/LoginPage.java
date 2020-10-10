@@ -33,4 +33,10 @@ public class LoginPage extends AppCompatActivity {
         Intent startupPage=new Intent(this, MainActivity.class);
         this.startActivity(startupPage);
     }
+
+    public void goToSIgnUpPage(View v){
+        Intent startupPage=new Intent(this, SignUp.class);
+        this.startActivity(startupPage);
+    }
+
 }

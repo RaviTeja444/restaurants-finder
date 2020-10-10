@@ -22,4 +22,11 @@ public class AdminLoginPage extends AppCompatActivity {
         Intent forgotPasswordPage=new Intent(this,ForgotPassword.class);
         this.startActivity(forgotPasswordPage);
     }
+
+    public void goToSIgnUpPage(View v){
+        Intent forgotPasswordPage=new Intent(this,SignUp.class);
+        this.startActivity(forgotPasswordPage);
+    }
+
+
 }

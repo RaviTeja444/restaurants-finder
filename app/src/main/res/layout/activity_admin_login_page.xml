@@ -122,7 +122,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/signUp"
             android:layout_width="179dp"
             android:layout_height="32dp"
             android:layout_marginBottom="56dp"
@@ -134,7 +134,23 @@
             android:textSize="22dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/signUpId"
+            android:layout_width="179dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="56dp"
+            android:fontFamily="cursive"
+            android:onClick="goToSIgnUpPage"
+            android:text="SignUp"
+            android:textAlignment="center"
+            android:textColor="#00674c"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.912"
             app:layout_constraintStart_toStartOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
