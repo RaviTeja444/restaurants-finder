@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -29,6 +30,12 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     @Override
     public void onBindViewHolder(@NonNull final RestaurantAdapter.RestaurantViewHolder shoppingViewHolder, int i) {
         TextView item = shoppingViewHolder.subview.findViewById(R.id.restName);
+        Button bb=shoppingViewHolder.subview.findViewById(R.id.button8);
+        bb.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+            }
+        });
         //TextView itemprice = shoppingViewHolder.subview.findViewById(R.id.prc2);
         View xx=shoppingViewHolder.subview.findViewById(i);
         final String ss=restaurantModel.restaurantList.get(i).Name.toString();
