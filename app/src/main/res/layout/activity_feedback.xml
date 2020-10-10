@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00674c"
+    tools:context=".feedback">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="626dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:text="Ratings : "
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/feedbackname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textColor="#00674c"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="55dp"
+        android:text="Reviews : "
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="205dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/feedbackname"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write few lines."
+        android:inputType="textMultiLine"
+        android:textColor="#00674c"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="55dp"
+        android:text="Suggestion : "
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="301dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/feedbackname"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write some suggestions."
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle_boundry"
+        android:onClick="goToBack"
+        android:text="Back"
+        android:textColor="#00674c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rectangle_boundry"
+        android:onClick="goToRestDetailPage"
+        android:text="SUBMIT"
+        android:textColor="#00674c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+</android.support.constraint.ConstraintLayout>
