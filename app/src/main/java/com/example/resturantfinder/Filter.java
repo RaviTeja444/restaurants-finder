@@ -12,7 +12,13 @@ public class Filter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter);
     }
+
     
+    public void goBackToStartUp(View v){
+        onBackPressed();
+        //Intent startUpIntent=new Intent(this,Startup.class);
+        //this.startActivity(startUpIntent);
+    }
 
     public void goToRestaurantListonSearch(View v){
         Intent resListIntent=new Intent(this,FilterRestaurantList.class);
