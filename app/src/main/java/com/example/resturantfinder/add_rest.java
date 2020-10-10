@@ -12,7 +12,6 @@ public class add_rest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_rest);
     }
-
     public void addrest(View v){
         Intent addrest=new Intent(this,user_home.class);
         addrest.putExtra("isFromAdmin","Y");
@@ -21,7 +20,7 @@ public class add_rest extends AppCompatActivity {
 
     public void goBack(View v){
         onBackPressed();
-       // Intent addrest=new Intent(this,user_home.class);
-       // this.startActivity(addrest);
+        // Intent addrest=new Intent(this,user_home.class);
+        // this.startActivity(addrest);
     }
 }
