@@ -8,10 +8,11 @@
     tools:context=".SignUp">
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="318dp"
-        android:layout_height="558dp"
+        android:layout_width="332dp"
+        android:layout_height="500dp"
         android:layout_marginStart="37dp"
 
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/rectangle_boundry"
@@ -109,7 +110,7 @@
         android:id="@+id/textView4"
         android:layout_width="212dp"
         android:layout_height="78dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:text="Sign Up"
         android:textAlignment="center"
         android:textColor="#ffffff"
