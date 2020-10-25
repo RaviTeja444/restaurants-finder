@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class FavoriteRestaurantList extends AppCompatActivity {
 
-    private RestaurantAdapter restaurantAdapter = null;
+    private RemoveRestaurantAdapter restaurantAdapter = null;
     private RecyclerView recyclerView= null;
     private GestureDetectorCompat restaurantCheck = null;
     private String s="";
@@ -24,13 +24,12 @@ public class FavoriteRestaurantList extends AppCompatActivity {
         Intent i=getIntent();
         s=i.getStringExtra("isFromAdmin").toString();
 
-        restaurantAdapter= new RestaurantAdapter();
+        restaurantAdapter= new RemoveRestaurantAdapter();
         recyclerView=findViewById(R.id.recyclerView);
         recyclerView.setAdapter(restaurantAdapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
 
     }
 

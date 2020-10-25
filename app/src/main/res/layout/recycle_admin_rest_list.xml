@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-
+    android:background="#ffffff"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
     android:layout_height="wrap_content">
 
 

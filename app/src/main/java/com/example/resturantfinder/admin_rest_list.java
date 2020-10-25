@@ -14,11 +14,19 @@ import android.widget.Button;
 public class admin_rest_list extends AppCompatActivity {
 
 
+    private DeleteRestaurantAdapter restaurantAdapter = null;
+    private RecyclerView recyclerView= null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_rest_list);
 
+        restaurantAdapter= new DeleteRestaurantAdapter();
+        recyclerView=findViewById(R.id.recyclerView);
+        recyclerView.setAdapter(restaurantAdapter);
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
 
     }
 
