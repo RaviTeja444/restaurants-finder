@@ -13,6 +13,7 @@ public class Filter extends AppCompatActivity {
         setContentView(R.layout.activity_filter);
     }
 
+    
     public void goBackToStartUp(View v){
         onBackPressed();
         //Intent startUpIntent=new Intent(this,Startup.class);
