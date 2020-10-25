@@ -1,5 +1,10 @@
 package com.example.resturantfinder;
 
+
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 public class RestaurantModel {
@@ -7,6 +12,9 @@ public class RestaurantModel {
     public ArrayList<Restaurant> restaurantList;
     //public ArrayList<Restaurant> favrestaurantList;
     private static RestaurantModel theModel=null;
+    FirebaseDatabase database=null;
+    DatabaseReference reference=null;
+
     private RestaurantModel(){
         restaurantList=new ArrayList<Restaurant>();
         loadItems();
@@ -45,6 +53,8 @@ public class RestaurantModel {
     }
 
     private void loadItems(){
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+
         Restaurant restaurantItem1=new Restaurant("McDonalds");
         Restaurant restaurantItem2=new Restaurant("Pound Sugar");
         Restaurant restaurantItem3=new Restaurant("Tea Cake");
