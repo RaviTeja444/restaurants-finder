@@ -51,4 +51,9 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
         //itemprice.setText(String.valueOf(restaurantModel.restaurantList.get(i).price));
     }
 
+    @Override
+    public int getItemCount() {
+        return restaurantModel.restaurantList.size();
+    }
+
 }
