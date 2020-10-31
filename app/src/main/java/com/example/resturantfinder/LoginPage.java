@@ -61,5 +61,20 @@ public class LoginPage extends AppCompatActivity {
         this.startActivity(forgotPasswordPage);
     }
 
+    public void goToAdminLogin(View v){
+        Intent adminLoginPage=new Intent(this,AdminLoginPage.class);
+        this.startActivity(adminLoginPage);
+    }
+
+    public void goToRestaurantListPage(View v){
+        Intent startupPage=new Intent(this, MainActivity.class);
+        this.startActivity(startupPage);
+    }
+
+    public void goToSIgnUpPage(View v){
+        Intent startupPage=new Intent(this, SignUp.class);
+        this.startActivity(startupPage);
+    }
+
 
 }
