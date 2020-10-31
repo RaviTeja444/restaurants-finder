@@ -120,8 +120,14 @@ public class RestaurantModel {
 
         });
     }
-    private void addRest(ArrayList<Restaurant> array){
-        for(Restaurant r:array){
+       public static RestaurantModel getSingleton() {
+        if (theModel == null)
+            theModel = new RestaurantModel();
+        return theModel;
+    }
+
+    private void addRest(ArrayList<RestaurantInfo> array) {
+        for (RestaurantInfo r : array) {
             restaurantList.add(r);
         }
 
