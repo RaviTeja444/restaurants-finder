@@ -26,4 +26,29 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
         return RestaurantViewHolder;
     }
 
+    @Override
+    public void onBindViewHolder(@NonNull final DeleteRestaurantAdapter.RestaurantViewHolder shoppingViewHolder, int i) {
+        TextView item = shoppingViewHolder.subview1.findViewById(R.id.restName);
+        Button bb=shoppingViewHolder.subview1.findViewById(R.id.button8);
+        bb.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent iui=new Intent(shoppingViewHolder.context, LoginPage.class);
+                //iui.putExtra("restName",ss);
+                shoppingViewHolder.context.startActivity(iui);
+            }
+        });
+        //TextView itemprice = shoppingViewHolder.subview.findViewById(R.id.prc2);
+        View xx=shoppingViewHolder.subview1.findViewById(i);
+        final String ss=restaurantModel.restaurantList.get(i).getRestaurantName().toString();
+        item.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent iui=new Intent(shoppingViewHolder.context, RestaurantDetails.class);
+                iui.putExtra("restName",ss);
+                shoppingViewHolder.context.startActivity(iui);
+            }
+        });
+        item.setText(restaurantModel.restaurantList.get(i).getRestaurantName());
+        //itemprice.setText(String.valueOf(restaurantModel.restaurantList.get(i).price));
+    }
+
 }
