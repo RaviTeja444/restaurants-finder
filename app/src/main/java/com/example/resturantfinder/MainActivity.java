@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private RestaurantAdapter restaurantAdapter = null;
     private RecyclerView recyclerView= null;
     private GestureDetectorCompat restaurantCheck = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 

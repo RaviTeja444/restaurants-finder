@@ -39,7 +39,7 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
         });
         //TextView itemprice = shoppingViewHolder.subview.findViewById(R.id.prc2);
         View xx=shoppingViewHolder.subview1.findViewById(i);
-        final String ss=restaurantModel.restaurantList.get(i).RestaurantName.toString();
+        final String ss=restaurantModel.restaurantList.get(i).getRestaurantName().toString();
         item.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent iui=new Intent(shoppingViewHolder.context, RestaurantDetails.class);
@@ -47,7 +47,7 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
                 shoppingViewHolder.context.startActivity(iui);
             }
         });
-        item.setText(restaurantModel.restaurantList.get(i).RestaurantName);
+        item.setText(restaurantModel.restaurantList.get(i).getRestaurantName());
         //itemprice.setText(String.valueOf(restaurantModel.restaurantList.get(i).price));
     }
 
@@ -65,4 +65,5 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
             context=itemView.getContext();
         }
     }
+
 }
