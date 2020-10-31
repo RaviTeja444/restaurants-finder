@@ -18,6 +18,7 @@ import java.util.List;
 
 public class RestaurantModel {
 
+    private static RestaurantAdapter restaurantAdapter;
     public ArrayList<RestaurantInfo>  restaurantList;
     //public ArrayList<Restaurant> favrestaurantList;
     private static RestaurantModel theModel=null;
