@@ -56,4 +56,14 @@ public class DeleteRestaurantAdapter extends RecyclerView.Adapter<DeleteRestaura
         return restaurantModel.restaurantList.size();
     }
 
+    public static class RestaurantViewHolder extends RecyclerView.ViewHolder {
+        public LinearLayout subview1;
+        public final Context context;
+        public RestaurantViewHolder(LinearLayout layout,ViewGroup itemView) {
+            super(layout);
+            subview1 = layout;
+            context=itemView.getContext();
+        }
+    }
+
 }
