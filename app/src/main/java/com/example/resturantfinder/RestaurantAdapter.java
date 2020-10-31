@@ -18,6 +18,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         super();
         restaurantModel = restaurantModel.getSingleton();
     }
+
     @NonNull
     @Override
     public RestaurantAdapter.RestaurantViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -40,15 +41,25 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         });
         //TextView itemprice = shoppingViewHolder.subview.findViewById(R.id.prc2);
         View xx=shoppingViewHolder.subview.findViewById(i);
-        final String ss=restaurantModel.restaurantList.get(i).RestaurantName.toString();
+        final String name=restaurantModel.restaurantList.get(i).getRestaurantName().toString();
+        final String location=restaurantModel.restaurantList.get(i).getRestaurantLocation().toString();
+        final String id=restaurantModel.restaurantList.get(i).getRestaurantId().toString();
+        final String type=restaurantModel.restaurantList.get(i).getRestaurantType().toString();
+        final String website=restaurantModel.restaurantList.get(i).getWebsite().toString();
+        final String email=restaurantModel.restaurantList.get(i).getRestaurantEmail().toString();
         item.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent iui=new Intent(shoppingViewHolder.context, RestaurantDetails.class);
-                iui.putExtra("restName",ss);
+                iui.putExtra("restName",name);
+                iui.putExtra("restid",id);
+                iui.putExtra("restlocation",location);
+                iui.putExtra("resttype",type);
+                iui.putExtra("restwebsite",website);
+                iui.putExtra("restemail",email);
                 shoppingViewHolder.context.startActivity(iui);
             }
         });
-        item.setText(restaurantModel.restaurantList.get(i).RestaurantName);
+        item.setText(restaurantModel.restaurantList.get(i).getRestaurantName());
         //itemprice.setText(String.valueOf(restaurantModel.restaurantList.get(i).price));
     }
 
