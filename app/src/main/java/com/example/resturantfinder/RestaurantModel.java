@@ -18,7 +18,7 @@ import java.util.List;
 
 public class RestaurantModel {
 
-    public ArrayList<Restaurant> restaurantList;
+    public ArrayList<RestaurantInfo>  restaurantList;
     //public ArrayList<Restaurant> favrestaurantList;
     private static RestaurantModel theModel=null;
     FirebaseDatabase database=null;
