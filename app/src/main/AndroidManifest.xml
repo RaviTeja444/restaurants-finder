@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.resturantfinder">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,22 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminLoginPage" />
-        <activity android:name=".FilterRestaurantList" />
-        <activity android:name=".user_after_login" />
-        <activity android:name=".FavoriteRestaurantList" />
-        <activity android:name=".user_home" />
-        <activity android:name=".add_rest" />
-        <activity android:name=".admin_rest_list" />
-        <activity android:name=".feedback" />
-        <activity android:name=".RestaurantDetails" />
-        <activity android:name=".Filter" />
-        <activity android:name=".MainActivity_" />
+        <activity android:name=".activity.FilterdRestaurantListActivity"></activity>
+        <activity android:name=".activity.AdminLoginActivity" />
+        <activity android:name=".activity.FilterRestaurantListActivity" />
+        <activity android:name=".activity.userRestoListActivity" />
+        <activity android:name=".activity.FavoriteRestaurantListActivity" />
+        <activity android:name=".activity.userHomeActivity" />
+        <activity android:name=".activity.AddRestaurantActivity" />
+        <activity android:name=".activity.AdminRestListActivity" />
+        <activity android:name=".activity.feedbackActivity" />
+        <activity android:name=".activity.RestaurantDetailsActivity" />
+        <activity android:name=".activity.ChooseFilterActivity" />
+        <activity android:name=".activity.MainActivity_" />
         <activity android:name=".password_reset" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.ForgotPassword" />
+        <activity android:name=".activity.LoginPageActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
