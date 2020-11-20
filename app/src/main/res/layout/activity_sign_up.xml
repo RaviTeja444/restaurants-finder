@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00674c"
-    tools:context=".SignUp">
+    tools:context=".activity.SignUpActivity">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="332dp"
         android:layout_height="500dp"
         android:layout_marginStart="37dp"
-
         android:layout_marginTop="30dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="70dp"
@@ -94,7 +93,6 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="28dp"
             android:background="@drawable/custom_round_corners"
-
             android:onClick="goToLoginPage"
             android:text="CREATE"
             android:textColor="#ffffff"

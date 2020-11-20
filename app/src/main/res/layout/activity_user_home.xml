@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#00674c"
-    tools:context=".user_home">
+    tools:context=".activity.userHomeActivity">
 
 
     <TextView
@@ -16,42 +17,50 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Welcome User"
         android:textColor="#ffffff"
-        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+         />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:layout_gravity="center"
         android:background="@drawable/feedbackname"
         android:onClick="goToFavRestaurantList"
         android:padding="10dp"
         android:text="♥ Favourite List"
         android:textColor="#00674c"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeuserid" />
+        android:textSize="25sp"
+        />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="80dp"
         android:background="@drawable/feedbackname"
         android:onClick="goToRestaurantList"
         android:padding="10dp"
         android:text="Restaurant List"
         android:textColor="#00674c"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
-</android.support.constraint.ConstraintLayout>
+        android:textSize="25sp"
+        />
+    <Button
+        android:id="@+id/userLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/feedbackname"
+        android:onClick="goToRestaurantList"
+        android:padding="10dp"
+        android:text="Logout"
+        android:visibility="visible"
+        android:textColor="#00674c"
+        android:textSize="25sp"
+        />
+</LinearLayout>
