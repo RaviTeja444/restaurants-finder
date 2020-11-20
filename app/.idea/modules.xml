@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/443623450/ResturantFinder.iml" filepath="$PROJECT_DIR$/.idea/modules/443623450/ResturantFinder.iml" group="ResturantFinder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ResturantFinder-app.iml" filepath="$PROJECT_DIR$/.idea/modules/ResturantFinder-app.iml" group="ResturantFinder/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="ResturantFinder/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/790870995/restaurants-finder-ResturantFinder.iml" filepath="$PROJECT_DIR$/.idea/modules/790870995/restaurants-finder-ResturantFinder.iml" group="ResturantFinder" />
     </modules>
   </component>
 </project>
