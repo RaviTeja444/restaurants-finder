@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00674c"
-    tools:context=".FilterRestaurantList">
+    tools:context=".activity.FilterRestaurantListActivity">
 
     <TextView
         android:id="@+id/textView6"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewFilterRestaurantList"
         android:layout_width="match_parent"
         android:layout_height="318dp"
         android:layout_marginStart="1dp"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewFilterRestaurantList" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00674c"
-    tools:context=".Filter">
+    tools:context=".activity.ChooseFilterActivity">
 
     <TextView
         android:id="@+id/textView6"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/foodStyleFiterBtn"
             android:layout_width="192dp"
             android:layout_height="50dp"
             android:layout_marginTop="47dp"
@@ -56,7 +56,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/cityFiterBtn"
             android:layout_width="192dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
@@ -68,11 +68,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/foodStyleFiterBtn"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/stateFiterBtn"
             android:layout_width="192dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
@@ -83,11 +83,11 @@
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/cityFiterBtn"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/zipCodeFiterBtn"
             android:layout_width="192dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
@@ -98,7 +98,7 @@
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/stateFiterBtn"
             tools:ignore="MissingConstraints" />
     </android.support.constraint.ConstraintLayout>
 
@@ -129,6 +129,7 @@
         android:backgroundTint="#ffffff"
         android:onClick="goToRestaurantListonSearch"
         android:text="Search"
+        android:visibility="gone"
         android:textAlignment="center"
         android:textColor="#00674c"
         android:textSize="20dp"
