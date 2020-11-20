@@ -1,166 +1,292 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#00674c"
-    tools:context=".RestaurantDetails">
+    tools:context=".activity.RestaurantDetailsActivity">
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="249dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/itemname"
-        android:backgroundTint="#ffffff"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="#00674c"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.ConstraintLayout
-
-        android:id="@+id/constraintLayout"
-        android:layout_width="316dp"
-        android:layout_height="370dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/itemname"
-        android:outlineAmbientShadowColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="36dp"
-            android:text="Location : "
-            android:textColor="#00674c"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="143dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="52dp"
-            android:text="TextView"
-            android:textColor="#00674c"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="158dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="40dp"
-            android:text="TextView"
-            android:textColor="#00674c"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="101dp"
-            android:layout_height="22dp"
-            android:layout_marginTop="24dp"
-            android:text="TextView"
-            android:textColor="#00674c"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.62"
-            app:layout_constraintStart_toEndOf="@+id/textView21"
-            app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="40dp"
-            android:text="Restaurant Type : "
-            android:textColor="#00674c"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="40dp"
-            android:text="Email : "
-            android:textColor="#00674c"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/restNamedet"
+            android:layout_width="249dp"
+            android:layout_height="29dp"
             android:layout_marginTop="20dp"
-            android:text="Website Link"
-            android:textColor="#00674c"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="279dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="15dp"
+            android:background="@drawable/itemname"
+            android:backgroundTint="#ffffff"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="TextView"
+            android:textAlignment="center"
             android:textColor="#00674c"
-            android:textSize="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
-    </android.support.constraint.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/rectangle_boundry"
-        android:onClick="goBackToStartupPage"
-        android:text="Back"
-        android:textColor="#00674c"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        <android.support.constraint.ConstraintLayout
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="47dp"
-        android:background="@drawable/rectangle_boundry"
-        android:onClick="goToFeedbackPage"
-        android:text="Feedback"
-        android:textColor="#00674c"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-</android.support.constraint.ConstraintLayout>
+            android:id="@+id/constraintLayout"
+            android:layout_width="316dp"
+            android:layout_gravity="center"
+            android:layout_height="370dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/itemname"
+            android:outlineAmbientShadowColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restNamedet">
+
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="36dp"
+                android:text="Location : "
+                android:textColor="#00674c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/restlocdet"
+                android:layout_width="143dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="52dp"
+                android:text="TextView"
+                android:textColor="#00674c"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/restemail"
+                android:layout_width="158dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="40dp"
+                android:text="TextView"
+                android:textColor="#00674c"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restlocdet" />
+
+            <TextView
+                android:id="@+id/resttypedet"
+                android:layout_width="101dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textColor="#00674c"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/restemail" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:text="Restaurant Type : "
+                android:textColor="#00674c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="40dp"
+                android:text="Email : "
+                android:textColor="#00674c"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Website Link"
+                android:textColor="#00674c"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resttypedet" />
+
+            <TextView
+                android:id="@+id/restweb"
+                android:layout_width="279dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="15dp"
+                android:text="TextView"
+                android:textColor="#00674c"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/lastReviewLayout"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:background="@drawable/round_whitecoroners"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Last Review"
+            android:textAlignment="center"
+            android:textColor="#00674c"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:text="Rating:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/Ratingtv"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:text="Review:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/feedbackReviewtv"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:text="Suggestion:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#00674c"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/feedbackSuggestionv"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="80dp">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_boundry"
+                android:onClick="goBackToStartupPage"
+                android:text="Back"
+                android:layout_alignParentStart="true"
+                android:textColor="#00674c"
+                />
+
+            <Button
+                android:id="@+id/feebackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_boundry"
+                android:onClick="goToFeedbackPage"
+                android:text="Feedback"
+                android:layout_alignParentEnd="true"
+                android:textColor="#00674c"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
