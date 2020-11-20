@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activity.MainActivity"
     android:background="#00674c">
 
     <TextView
@@ -21,6 +21,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/filterrest"
         android:layout_width="wrap_content"
@@ -51,10 +52,11 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/filterrest"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="411dp"
-        android:layout_height="0dp"
+        android:layout_height="365dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="1dp"
@@ -63,6 +65,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/filterrest"
         app:layout_constraintVertical_bias="0.16000003" />
-
-
 </android.support.constraint.ConstraintLayout>
