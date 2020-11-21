@@ -35,6 +35,11 @@
 * Admin can also create for an account. 
 * With admin credentials, they can create or delete new restaurant details. 
 
+## Testing credentials
+### Credentails
+* email: chanduhvg@gmail.com
+* password: bsr@2468
+
 # Project Description
 
 ## Activities:
@@ -44,6 +49,11 @@
 
 
 ## Features and Models:
+* Users who wish not to disclose their details then they can browse the list of restaurants without logging in. 
+* User can filter the restaurant based on their preferred food type and location.
+* We have a feature where people who own a restaurant can add their restaurant with admin privilages. 
+* We are providing access to save users favourite list and can access whenever they want. 
+* Also, we have created feedback option where user can review the restaurnat which helps other users know more information about the restaurant. 
 
 
 ## Functionality:
@@ -63,6 +73,8 @@
 * Whenever user tries to log in, firebase authenticates the username and password, if its valid it then redirects to homepage of the user else it redirects to same login page.
 
 ## Activity flow diagram
+
+![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/App%20Flow.png)
 
 
 ## Activities List using for the App:
@@ -102,7 +114,6 @@ This page allows a user to register for the first Time.
 
 ### Sign up page: 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/Screenshot%20(101).png)
-
 
 
 ### Login Page 
