@@ -65,10 +65,42 @@
 ## Activity flow diagram
 
 
+## Activities List using for the App:
+
+### APP STARTUP Page – 
+* This is the start page of the App which provides all restaurants listed where user can look. Also he can choose filter button in which he can,select a criteria for restaurants. For lookup of restaurants users need not require to login.
+
+### USER LOGIN – 
+* This page allows user to login into Application and it is asked only when user wants to add a restaurant to his favorite list.
+
+### ADMIN LOGIN – 
+* This page allows Admin to login into Application.
+
+### FORGOT PASSWORD – 
+•	This page asks for already registered user Email ID to send a new password.
+### SIGNUP – 
+This page allows a user to register for the first Time.
+
+### ADMIN-ADD/DELETE RESTAURANT – 
+* This page is exclusively for the Admin where he can manage the restaurants that is he can add/delete a restaurant.
+### ADMIN-ADD RESTAURANT –
+•	When the admin clicks on the above activity, admin can enter new restaurant details and add it.
+### HOME PAGE – 
+•	This is the common home page for admin and user where he can find all restaurant list button, Filter Restaurant Option and Contact Us.
+### FILTER RESTAURANT –
+• This page allows user to search restaurants based on food style, name of the restaurant, location and budget.
+•	RESTAURANT LIST – This page lists either all the restaurants or restaurants based on filter.
+### Favorite RESTAURANT LIST – 
+•	This page lists either all the favorite restaurants of a particular user which he added before.
+### RESTAURANT DETAIL– 
+* This page displays individual restaurant details along with food items list of that particular restaurant.
+### FEEDBACK –
+* This page allows the user to provide the feedback of that restaurant.
+
+
 ## Layouts of our project:
 
 ### Sign up page: 
-* This is where user can register for an account in our application. When a user sign up for an account, if the user is registered with an email which is already registered it throws an error and displays user that the email is already registered.
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/Screenshot%20(101).png)
 
 
@@ -76,40 +108,26 @@
 ### Login Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/IncorrectPassword.png)
 
-## User when Sign in
+### User when Sign in
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/6.png)
 
-## App Landing Page 
+### App Landing Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/1.png)
 
-### User Homepage
+#### User Homepage
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/6.png)
 
-## User Filter Restaurant Page 
+### User Filter Restaurant Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/2.png)
 
-## User Filtered Restaurant Page
+### User Filtered Restaurant Page
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/3.png)
 
-## Favourite Restaurant List
+### Favourite Restaurant List
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/7.png)
 
-## Admin Home Page
+### Admin Home Page
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/8.png)
 
-## Admin Add Restaurant Page
+### Admin Add Restaurant Page
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/9.png)
-
-## 
-
-
-
-
-
-
-
-
-
-
-
-
