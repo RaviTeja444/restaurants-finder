@@ -131,3 +131,6 @@ This page allows a user to register for the first Time.
 
 ### Admin Add Restaurant Page
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/9.png)
+
+### Restaurant Details and feedback 
+![](https://github.com/RaviTeja444/restaurants-finder/blob/main/Screenshots/5.png)
