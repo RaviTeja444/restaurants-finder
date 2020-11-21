@@ -3,6 +3,7 @@
 ## App logo
 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/logo.png)
+Credits: freepick.com
 
 ## ER - Diagram
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Blank%20diagram%20(2).png)
@@ -113,14 +114,11 @@ This page allows a user to register for the first Time.
 ## Layouts of our project:
 
 ### Sign up page: 
-![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/Screenshot%20(101).png)
+![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/SIGN%20UP.png)
 
 
 ### Login Page 
-![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/IncorrectPassword.png)
-
-### User when Sign in
-![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/6.png)
+![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/LOGIN.png)
 
 ### App Landing Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/1.png)
