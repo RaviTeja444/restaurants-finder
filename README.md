@@ -183,13 +183,13 @@ This page allows a user to register for the first Time.
 ### Restaurant Details and feedback 
 ![](https://github.com/RaviTeja444/restaurants-finder/blob/main/Screenshots/5.png)
 
-## Problems faced
+## Problems faced :
 ### Below are the problems/challenges faced during the development of the application:
 
 * While creating recycler views/adapters and loading data from firebase.
 * Setting up firebase and getting google-services json file into app to connect firebase.
 * Faced few challenges if any of the team member didn’t pull the code before making changes.
-## Future Improvements
+## Future Improvements :
 * Adding more restaurant details like restaurant timings and entire menu.
 * Implementing food ordering option into the application so the user can view restaurants and also order food.
 * Integrating google maps into the application to track your order or visit the restaurant.
