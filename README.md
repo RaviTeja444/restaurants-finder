@@ -38,8 +38,12 @@ Credits: freepick.com
 
 ## Testing credentials
 ### Credentails
+#### User Credentials:
 * email: chanduhvg@gmail.com
-* password: bsr@2468
+* password: bgc@2468
+#### Admin Credentials:
+* 
+* 
 
 # Project Description
 
