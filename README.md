@@ -54,32 +54,32 @@ Credits: freepick.com
 
 
 ## Features:
-### Restaurant List:
+#### Restaurant List:
 * Any user with/without login can open the app and see all the restaurant and its details
 * User can also provide the feedback to the restaurant anonymously.
 
-### FAVOURITE RESTAURANT LIST:
+#### FAVOURITE RESTAURANT LIST:
 * Once User logged in ,can add any restaurant to his favorites.
 * User can view all his favourite restaurants.
 * User can remove restaurant from his favorites at any time.
 
-### USER/ADMIN LOGIN :
+#### USER/ADMIN LOGIN :
 * User and Admin have different login pages where he can navigate and login by entering the credentials.
 * User and Admin will be displayed with their respective home screened once logged in.
 * User will only be asked to login if he wants to add a restaurant as his favourite.
 
-### ADMIN ADD/REMOVE RESTAURANT:
+#### ADMIN ADD/REMOVE RESTAURANT:
 * Admin once logged in can be able to add a new restaurant or delete a existing restaurant.
 * Admin have to provide all the required details of the restaurant in-order to add it to database.
 * Admin can also visit his home page as regular user and can have his favorite restaurants.
 
-### FILTER RESTAURANTS:
+#### FILTER RESTAURANTS:
 * Irrespective of user login, he/she can view all the restaurants based on the filter as well.
 * Filter is based on Food style, City, State and Zip code.
 * User can select any filter and following restaurants will be displayed.
 * User cannot enter any filter detail manually, instead he should choose from the available options.
 
-### FORGOT PASSWORD:
+#### FORGOT PASSWORD:
 * Registered user who doesn’t remember the password can reset it by forgot password option.
 * User should enter registered email ID and password reset link will be sent to that email where user can reset his/her password and try logging in again.
 
