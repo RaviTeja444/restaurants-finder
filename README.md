@@ -42,8 +42,8 @@ Credits: freepick.com
 * email: chanduhvg@gmail.com
 * password: bgc@2468
 #### Admin Credentials:
-* 
-* 
+* email: srkrao547@gmail.com
+* password: srk@2468
 
 # Project Description
 
