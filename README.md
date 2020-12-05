@@ -53,19 +53,45 @@ Credits: freepick.com
 * Intially, we have listed the details of various restaurants where each restaurant is categorized based on its food type. At one point of time user want to wishlist the restaurants he likes, so he needs to log in with registered credentials. Then we are storing the details of the favourite restaurants in cloud database called firebase. when user logs out and comes back he can view the saved restaurants.
 
 
-## Features and Models:
-* Users who wish not to disclose their details then they can browse the list of restaurants without logging in. 
-* User can filter the restaurant based on their preferred food type and location.
-* We have a feature where people who own a restaurant can add their restaurant with admin privilages. 
-* We are providing access to save users favourite list and can access whenever they want. 
-* Also, we have created feedback option where user can review the restaurnat which helps other users know more information about the restaurant. 
+## Features:
+### Restaurant List:
+* Any user with/without login can open the app and see all the restaurant and its details
+* User can also provide the feedback to the restaurant anonymously.
 
+### FAVOURITE RESTAURANT LIST:
+* Once User logged in ,can add any restaurant to his favorites.
+* User can view all his favourite restaurants.
+* User can remove restaurant from his favorites at any time.
+
+### USER/ADMIN LOGIN :
+* User and Admin have different login pages where he can navigate and login by entering the credentials.
+* User and Admin will be displayed with their respective home screened once logged in.
+* User will only be asked to login if he wants to add a restaurant as his favourite.
+
+### ADMIN ADD/REMOVE RESTAURANT:
+* Admin once logged in can be able to add a new restaurant or delete a existing restaurant.
+* Admin have to provide all the required details of the restaurant in-order to add it to database.
+* Admin can also visit his home page as regular user and can have his favorite restaurants.
+
+### FILTER RESTAURANTS:
+* Irrespective of user login, he/she can view all the restaurants based on the filter as well.
+* Filter is based on Food style, City, State and Zip code.
+* User can select any filter and following restaurants will be displayed.
+* User cannot enter any filter detail manually, instead he should choose from the available options.
+
+### FORGOT PASSWORD:
+* Registered user who doesn’t remember the password can reset it by forgot password option.
+* User should enter registered email ID and password reset link will be sent to that email where user can reset his/her password and try logging in again.
 
 ## Functionality:
 * We use the database to store the users favourite list.
 
 ## Persists on the app:
 * email, password, restaurant Preference.
+* For maintaining persistence of the data we have used Firebase cloud(Realtime) as backend service in our application. It basically stores data in the form of JSON data.
+1. FavouriteRestaurants
+2. Restaurants
+3. Users
 
 ## Database Used: Firebase
 * We are using the Firebase for storing the list of all restaurants and their location and its food type.
@@ -76,6 +102,11 @@ Credits: freepick.com
 * Here user has a chance to sign up for an account by entering his credentials. 
 * Firebase then stores and secures the details of the user. 
 * Whenever user tries to log in, firebase authenticates the username and password, if its valid it then redirects to homepage of the user else it redirects to same login page.
+
+## API/Library
+* We have used two api’s in our application
+* Firebase Auth which is used for authentication and for registering users.
+* Google gms api for sending password reset link to the respective email.
 
 ## Activity flow diagram
 
@@ -95,6 +126,8 @@ Credits: freepick.com
 
 ### FORGOT PASSWORD – 
 •	This page asks for already registered user Email ID to send a new password.
+### Verification mail: 
+* After clicking confirm a reset password link will be sent to the mail Id provided to verify the user as shown.
 ### SIGNUP – 
 This page allows a user to register for the first Time.
 
@@ -105,7 +138,7 @@ This page allows a user to register for the first Time.
 ### HOME PAGE – 
 •	This is the common home page for admin and user where he can find all restaurant list button, Filter Restaurant Option and Contact Us.
 ### FILTER RESTAURANT –
-• This page allows user to search restaurants based on food style, name of the restaurant, location and budget.
+• This page allows user to search restaurants based on food style, City, State, Zip.
 •	RESTAURANT LIST – This page lists either all the restaurants or restaurants based on filter.
 ### Favorite RESTAURANT LIST – 
 •	This page lists either all the favorite restaurants of a particular user which he added before.
@@ -120,7 +153,6 @@ This page allows a user to register for the first Time.
 ### Sign up page: 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/SIGN%20UP.png)
 
-
 ### Login Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/LOGIN.png)
 
@@ -129,6 +161,9 @@ This page allows a user to register for the first Time.
 
 #### User Homepage
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/6.png)
+
+### Verification Mail
+![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/verification.png)
 
 ### User Filter Restaurant Page 
 ![](https://raw.githubusercontent.com/RaviTeja444/restaurants-finder/main/Screenshots/2.png)
@@ -147,3 +182,14 @@ This page allows a user to register for the first Time.
 
 ### Restaurant Details and feedback 
 ![](https://github.com/RaviTeja444/restaurants-finder/blob/main/Screenshots/5.png)
+
+## Problems faced
+### Below are the problems/challenges faced during the development of the application:
+
+* While creating recycler views/adapters and loading data from firebase.
+* Setting up firebase and getting google-services json file into app to connect firebase.
+* Faced few challenges if any of the team member didn’t pull the code before making changes.
+## Future Improvements
+* Adding more restaurant details like restaurant timings and entire menu.
+* Implementing food ordering option into the application so the user can view restaurants and also order food.
+* Integrating google maps into the application to track your order or visit the restaurant.
